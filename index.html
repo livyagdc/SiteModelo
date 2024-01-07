@@ -11,6 +11,7 @@
 
     <script src="js/hamburger.js" defer></script>
     <script src="js/tema.js" defer></script>
+    <script src="js/search.js" defer></script>
     <script src="js/carrossel.js" defer></script>
     
     <title>AquarelaArts</title>
@@ -54,7 +55,29 @@
     <div class="col-20" id="topo"></div>
 
     <main class="col-20" id="main">
-        <div class="col-5" id="sidebar">Sidebar</div>
+        <div class="col-5" id="sidebar">
+
+            <!-- Barra de pesquisa -->
+            <div class="search">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" placeholder="Pesquisar...">
+                <div class="list"></div>
+                <button class="btn-search"><span class="material-symbols-outlined" id="icon-search">search</span></button>
+            </div>
+            <!-- Fim Barra de pesquisa -->
+
+            <ul class="side-list">
+                <li><a href="#">Canetas</a></li>
+                <li><a href="#">Cavaletes</a></li>
+                <li><a href="#">Kits</a></li>
+                <li><a href="#">Papelaria</a></li>
+                <li><a href="#">Pincéis</a></li>
+                <li><a href="#">Quadros</a></li>
+                <li><a href="#">Skecthbooks</a></li>
+                <li><a href="#">Temas</a></li>
+            </ul>
+
+        </div>
 
         <!-- Carrossel -->
         <div class="col-15c" id="carrossel">
