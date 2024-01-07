@@ -10,9 +10,13 @@
     --branco: #fff;
     --preto: #1d1b20;
 
+
+
     /*Grid layout*/
     --main-radius: 5px;
     --main-padding: 10px;
+    --col-1: 5%
+    --col-4: 20%;
 
     /* Tema */
     background: var(--bg);
@@ -24,16 +28,10 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-    text-align: center;
     outline: none;
     box-sizing: border-box;
     border: none;
     transition: .2s linear;
-}
-
-#topo {
-    background: var(--branco);
-    height: 95px;
 }
 
 /* Início Header */
@@ -115,68 +113,6 @@
 
 /* Fim Header */
 
-/* Inicio Main */
-    #main {
-        padding: 5px;
-        height: 90vh;
-    }
-
-    #sidebar {
-        margin: 1.5px;
-        background: var(--bg);
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        height: 50vh;
-    }
-
-    #carrossel {
-        margin: 1.5px;
-        background: var(--bg);
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        height: 50vh;
-    }
-
-    #content1 {
-        margin: 1.5px;
-        background: var(--bg);
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        height: 35vh;
-    }
-
-    #content2 {
-        margin: 1.5px;
-        background: var(--bg);
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        height: 35vh;
-    }
-
-    #content3 {
-        margin: 1.5px;
-        background: var(--bg);
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        height: 35vh;
-    }
-
-    #content4 {
-        margin: 1.5px;
-        background: var(--bg);
-        border-radius: var(--main-radius);
-        padding-top: var(--main-padding);
-        height: 35vh;
-    }
-/* Fim Main */
-
-footer {
-    background: var(--bg);
-    padding-top: var(--main-padding);
-    align-items: center;
-    justify-content: space-between;
-}
-
 /* Início Tema: Light ou Dark */
     .btn-tema {
         color: var(--btnColor);
@@ -216,21 +152,224 @@ footer {
     .dark-theme #dark {
         display: none;
     }
+
+    .dark-theme #light {
+        display: block;
+    }
 /* Fim tema: Light ou Dark */
 
+#topo {
+    background: var(--branco);
+    height: 95px;
+}
 
+/* Inicio Main */
+    #main {
+        padding: 5px;
+        height: 90vh;
+    }
 
+    #sidebar {
+        margin: 1.5px;
+        background: var(--bg);
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        height: 50vh;
+    }
+    /* Inicio Carrossel */
+        #carrossel {
+            margin: 1.5px;
+            background: var(--bg);
+            border-radius: var(--main-radius);
+            padding-top: var(--main-padding);
+            height: 50vh;
+        }
 
+        section.slider {
+            width: 100%;
+            height: auto;
+            padding: 0 !important;
+            overflow: hidden;
+        }
 
+        .slider-content {
+            width: 400%;
+            height: auto;
+            display: flex;
+        }
 
+        .slider-content input, .img-mobile {
+            display: none;
+         }
 
+         .slide-box {
+            width: 25%;
+            height: auto;
+            position: relative;
+            text-align: center;
+            transition: 1s;
+        }
 
+        .slide-box img {
+            width: 100%;
+            border-radius: 2%;
+        }
 
+        .nav-manual, .nav-auto {
+            position: absolute;
+            margin-left: 34.5%;
+            margin-top: 21.5%;
+            display: flex;
+            justify-content: center;
+        }
 
+        .nav-manual .manual-btn, .nav-auto div{
+            border: 2px solid var(--amarelo);
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.2s;
+        }
 
+        .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+            margin-right: 10px;
+        }
 
+        .nav-manual .manual-btn:hover {
+            background-color: var(--amarelo);
+        }
 
+        #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked~.nav-auto .auto-btn3 {
+            background-color: var(--amarelo);
+        }
 
+        #radio1:checked ~ .primeiro {
+            margin-left: 0%;
+        }
+        
+        #radio2:checked ~ .primeiro {
+            margin-left: -25%;
+        }
+        
+        #radio3:checked ~ .primeiro {
+            margin-left: -50%;
+        }
+    /* Fim Carrossel */
+    
+    /* Início Produtos */
+    #secprodutos {
+        height: 60vh;
+        padding: 0 !important;
+        overflow: hidden;
+        background: var(--bg);
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+    }
+ 
+    #secprodutos h1 {
+        font-size: 18px;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+
+    .produtos-contents {
+        width: 200%;
+        height: auto;
+        display: flex;
+        margin-left: 3%;
+        transition: 1s;
+    }
+
+    #radio-left, #radio-right {
+        display: none;
+    }
+    
+    #radio-right:checked ~ .produtos-contents{
+        margin-left: -60%;
+    }
+
+    #radio-left:checked ~ .produtos-contents{
+        margin-left: 3%;
+    }
+
+    #btn-right, #btn-left {
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    
+    #btn-right span, #btn-left span {
+        font-size: 50px;
+        color: var(--amarelo);
+    }
+
+    #btn-left {
+        position: relative;
+        top: 45%; left: 0;
+    }
+
+    #btn-right {
+        position: relative;
+        top: 45%; left: 90%;
+    }
+
+    .content {
+        margin: 3px;
+        background: var(--branco);
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        height: 240px;
+        width: 240px;
+    }
+/* Fim Main */
+
+footer {
+    background: var(--bg);
+    padding-top: var(--main-padding);
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo base para as colunas */
+    [class*="col-"] {
+        box-sizing: border-box;
+        float: left;
+    }
+
+    /* Larguras das colunas para dispositivos desktop */
+    .col-1 {width: 5%;}
+    .col-2 {width: 10%;}
+    .col-3 {width: 15%;}
+    .col-4 {width: 20%;}
+    .col-4b {width: 24.75%;}
+    .col-5 {width: 25%;}
+    .col-6 {width: 30%;}
+    .col-7 {width: 35%;}
+    .col-8 {width: 40%;}
+    .col-9 {width: 45%;}
+    .col-10 {width: 50%;}
+    .col-11 {width: 55%;}
+    .col-12 {width: 60%;}
+    .col-13 {width: 65%;}
+    .col-14 {width: 70%;}
+    .col-15c {width: 74.5%}
+    .col-15 {width: 75%;}
+    .col-16 {width: 80%;}
+    .col-17 {width: 85%;}
+    .col-18 {width: 90%;}
+    .col-19 {width: 95%;}
+    .col-20 {width: 100%;}
+
+    /* Limpar a flutuação (clearfix) para evitar problemas de layout */
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Fim Colunas */
 
 
 /* Media Queries*/
@@ -252,12 +391,10 @@ footer {
         clip-path: circle(100px at 90% -15%);
         opacity: 0.8;
         transition: 1s ease-out;
-
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         gap: 0;
-
         pointer-events: none;
     }
 
@@ -292,105 +429,10 @@ footer {
         transform: rotate(-135deg);
         top: -7px;
     }
-
     /* Fim Menu de navegação */
 }
 
 
-/* Estilo base para as colunas */
-[class*="col-"] {
-    box-sizing: border-box;
-    float: left;
-}
-
-/* Larguras das colunas para dispositivos desktop */
-.col-1 {
-    width: 5%;
-}
-
-.col-2 {
-    width: 10%;
-}
-
-.col-3 {
-    width: 15%;
-}
-
-.col-4 {
-    width: 20%;
-}
-
-.col-4b {
-    width: 24.75%;
-}
-
-.col-5 {
-    width: 25%;
-}
-
-.col-6 {
-    width: 30%;
-}
-
-.col-7 {
-    width: 35%;
-}
-
-.col-8 {
-    width: 40%;
-}
-
-.col-9 {
-    width: 45%;
-}
-
-.col-10 {
-    width: 50%;
-}
-
-.col-11 {
-    width: 55%;
-}
-
-.col-12 {
-    width: 60%;
-}
-
-.col-13 {
-    width: 65%;
-}
-
-.col-14 {
-    width: 70%;
-}
-
-.col-15c {
-    width: 74.5%
-}
-
-.col-15 {
-    width: 75%;
-}
-
-.col-16 {
-    width: 80%;
-}
-
-.col-17 {
-    width: 85%;
-}
-
-.col-18 {
-    width: 90%;
-}
-
-.col-19 {
-    width: 95%;
-}
-
-.col-20 {
-    width: 100%;
-}
 
 
 /* Alterar a largura para 100% em dispositivos móveis */
@@ -403,11 +445,4 @@ footer {
     #main {
         display: table;
     }
-}
-
-/* Limpar a flutuação (clearfix) para evitar problemas de layout */
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
 }
