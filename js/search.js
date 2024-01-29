@@ -6,10 +6,20 @@ let linkTag = searchWrapper.querySelector("a");
 let webLink;
 
 let suggestions = [
+    "Álbum",
     "Aquarela",
+    "Biscuit",
+    "Borracha",
+    "Caixas",
+    "Carimbo",
+    "Esponja",
     "Estojo",
     "Giz",
+    "Godet",
+    "Grafites",
+    "Maleta",
     "Moldura",
+    "Papel",
     "Pincel",
     "Tela",
     "Tinta",

@@ -30,7 +30,7 @@
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#secprodutos">Produtos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
 
@@ -65,17 +65,19 @@
                 <button class="btn-search"><span class="material-symbols-outlined" id="icon-search">search</span></button>
             </div>
             <!-- Fim Barra de pesquisa -->
-
-            <ul class="side-list">
-                <li><a href="#">Canetas</a></li>
-                <li><a href="#">Cavaletes</a></li>
-                <li><a href="#">Kits</a></li>
-                <li><a href="#">Papelaria</a></li>
-                <li><a href="#">Pincéis</a></li>
-                <li><a href="#">Quadros</a></li>
-                <li><a href="#">Skecthbooks</a></li>
-                <li><a href="#">Temas</a></li>
-            </ul>
+            <div id="sidebar-list">
+                <ul id="side-list">
+                    <li><a href="#">Adesivos</a></li>
+                    <li><a href="#">Canetas</a></li>
+                    <li><a href="#">Cavaletes</a></li>
+                    <li><a href="#">Kits</a></li>
+                    <li><a href="#">Papelaria</a></li>
+                    <li><a href="#">Pincéis</a></li>
+                    <li><a href="#">Quadros</a></li>
+                    <li><a href="#">Skecthbooks</a></li>
+                    <li><a href="#">Tintas</a></li>
+                </ul>
+           </div>
 
         </div>
 
@@ -132,27 +134,189 @@
 
             <div class="produtos-contents">
 
-                <div class="content">Content1</div>
+                <!-- Início Content 1 -->
+                <div class="content" id="content-1">
+                    <img src="images/produtos/desc-20.svg" alt="desconto-20" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
 
-                <div class="content">Content2</div>
+                    <img src="images/produtos/produto-1.svg" alt="Tinta">
 
-                <div class="content">Content3</div>
+                    <div class="descricao">
+                        <h3>Tinta aquarela - 12 cores</h3>
+                        <p class="preco"> R$ 48,00 <span> R$ 60,00 </span></p>
+                    </div>
 
-                <div class="content">Content4</div>
-            
-                <div class="content">Content5</div>
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 1 -->
 
-                <div class="content">Content6</div>
+                <!-- Início Content 2 -->
+                <div class="content" id="content-2">
+                    <img src="images/produtos/desc-20.svg" alt="desconto-20" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
 
-                <div class="content">Content7</div>
+                    <img src="images/produtos/produto-2.svg" alt="Biscuit">
 
-                <div class="content">Content8</div>
+                    <div class="descricao">
+                        <h3>Biscuit 500g - 5 cores</h3>
+                        <p class="preco"> R$ 40,00 <span> R$ 50,00 </span></p>
+                    </div>
+
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 2 -->               
+
+                <!-- Início Content 3 -->
+                <div class="content" id="content-3">
+                    <img src="images/produtos/desc-15.svg" alt="desconto-15" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
+
+                    <img src="images/produtos/produto-3.svg" alt="Borracha">
+
+                    <div class="descricao">
+                        <h3>Borrachas - 5 unid.</h3>
+                        <p class="preco"> R$ 8,50 <span> R$ 10,00 </span></p>
+                    </div>
+
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 3 -->   
+
+                <!-- Início Content 4 -->
+                <div class="content" id="content-4">
+                    <img src="images/produtos/desc-15.svg" alt="desconto-15" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
+
+                    <img src="images/produtos/produto-4.svg" alt="Estojo">
+
+                    <div class="descricao">
+                        <h3>Estojo azul estampado</h3>
+                        <p class="preco"> R$ 12,75 <span> R$ 15,00 </span></p>
+                    </div>
+
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 4 -->   
+
+                <!-- Início Content 5 -->
+                <div class="content" id="content-5">
+                    <img src="images/produtos/desc-10.svg" alt="desconto-10" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
+
+                    <img src="images/produtos/produto-5.svg" alt="Estojo">
+
+                    <div class="descricao">
+                        <h3>Estojo lilás</h3>
+                        <p class="preco"> R$ 9,00 <span> R$ 10,00 </span></p>
+                    </div>
+
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 5 --> 
+
+                <!-- Início Content 6 -->
+                <div class="content" id="content-6">
+                    <img src="images/produtos/desc-10.svg" alt="desconto-10" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
+
+                    <img src="images/produtos/produto-6.svg" alt="Giz">
+
+                    <div class="descricao">
+                        <h3>Giz de cera - 8 cores</h3>
+                        <p class="preco"> R$ 13,50 <span> R$ 15,00 </span></p>
+                    </div>
+
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 6 --> 
+
+                <!-- Início Content 7 -->
+                <div class="content" id="content-7">
+                    <img src="images/produtos/desc-5.svg" alt="desconto-5" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
+
+                    <img src="images/produtos/produto-7.svg" alt="Lápis">
+
+                    <div class="descricao">
+                        <h3>Kit lápis de cor - 72 cores</h3>
+                        <p class="preco"> R$ 114,00 <span> R$ 120,00 </span></p>
+                    </div>
+
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 7 --> 
+
+                <!-- Início Content 8 -->
+                <div class="content" id="content-8">
+                    <img src="images/produtos/desc-5.svg" alt="desconto-5" class="desconto">
+                    <span class="material-symbols-outlined fav">favorite</span>
+
+                    <img src="images/produtos/produto-8.svg" alt="Pincel">
+
+                    <div class="descricao">
+                        <h3>Kit pincéis finos - 5 unid.</h3>
+                        <p class="preco"> R$ 23,75 <span> R$ 25,00 </span></p>
+                    </div>
+
+                    <div class="adicionar">
+                        <input type="number" min="1" max="100" value="1">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <!-- Fim Content 8 --> 
                 
             </div>
         </section>
         <!-- Fim produtos -->
 
+        <!-- Sobre -->
+        <section class="col-20" id="sobre">
+            <h1>Sobre a AquarelaArts</h1>
+            <h6>EMPRESA FICTÍCIA</h6>
+            <div id="txt-sobre">
+                <p>
+                    Bem-vindo à AquarelaArts, a sua loja online especializada em arte e materiais de pintura! 
+                    Nossa paleta de cores inspira-se na variedade de tons encontrados na natureza e nas expressões 
+                    artísticas. O azul principal reflete a serenidade e a profundidade criativa, enquanto o verde 
+                    secundário representa a vitalidade e a renovação que a arte proporciona. <br> 
+                    Na AquarelaArts, acreditamos na diversidade de formas de expressão artística e na capacidade de 
+                    cada pessoa ser um artista. Nosso amarelo destaque simboliza a energia positiva e a criatividade 
+                    que desejamos inspirar em todos os nossos clientes. <br>
+                    Navegue pela nossa loja e descubra uma ampla seleção de tintas, pincéis, telas e tudo o que você 
+                    precisa para dar vida às suas criações. <br> 
+                    Seja você um iniciante curioso ou um artista experiente, a AquarelaArts está aqui para apoiar e 
+                    nutrir sua paixão pela arte. Explore, crie e deixe sua imaginação fluir conosco na AquarelaArts, 
+                    onde a arte encontra seu lar.
+                </p>
+            </div>
+
+        </section>
+        <!-- Fim Sobre -->
+
+
     </main>
+
 
 </body>
 
