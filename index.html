@@ -13,6 +13,7 @@
     <script src="js/tema.js" defer></script>
     <script src="js/search.js" defer></script>
     <script src="js/carrossel.js" defer></script>
+    <script src="js/chatbot.js" defer></script>
     
     <title>AquarelaArts</title>
 </head>
@@ -60,11 +61,12 @@
             <!-- Barra de pesquisa -->
             <div class="search">
                 <a href="" target="_blank" hidden></a>
-                <input type="text" placeholder="Pesquisar...">
+                <input name="search" type="text" placeholder="Pesquisar...">
                 <div class="list"></div>
                 <button class="btn-search"><span class="material-symbols-outlined" id="icon-search">search</span></button>
             </div>
             <!-- Fim Barra de pesquisa -->
+
             <div id="sidebar-list">
                 <ul id="side-list">
                     <li><a href="#">Adesivos</a></li>
@@ -134,7 +136,7 @@
 
             <div class="produtos-contents">
 
-                <!-- Início Content 1 -->
+                <!-- Content 1 -->
                 <div class="content" id="content-1">
                     <img src="images/produtos/desc-20.svg" alt="desconto-20" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -147,13 +149,13 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <!-- Fim Content 1 -->
 
-                <!-- Início Content 2 -->
+                <!-- Content 2 -->
                 <div class="content" id="content-2">
                     <img src="images/produtos/desc-20.svg" alt="desconto-20" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -166,13 +168,13 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <!-- Fim Content 2 -->               
 
-                <!-- Início Content 3 -->
+                <!-- Content 3 -->
                 <div class="content" id="content-3">
                     <img src="images/produtos/desc-15.svg" alt="desconto-15" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -185,13 +187,13 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <!-- Fim Content 3 -->   
 
-                <!-- Início Content 4 -->
+                <!-- Content 4 -->
                 <div class="content" id="content-4">
                     <img src="images/produtos/desc-15.svg" alt="desconto-15" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -204,13 +206,13 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <!-- Fim Content 4 -->   
 
-                <!-- Início Content 5 -->
+                <!-- Content 5 -->
                 <div class="content" id="content-5">
                     <img src="images/produtos/desc-10.svg" alt="desconto-10" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -223,13 +225,13 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <!-- Fim Content 5 --> 
 
-                <!-- Início Content 6 -->
+                <!-- Content 6 -->
                 <div class="content" id="content-6">
                     <img src="images/produtos/desc-10.svg" alt="desconto-10" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -242,13 +244,13 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <!-- Fim Content 6 --> 
 
-                <!-- Início Content 7 -->
+                <!-- Content 7 -->
                 <div class="content" id="content-7">
                     <img src="images/produtos/desc-5.svg" alt="desconto-5" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -261,13 +263,13 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <!-- Fim Content 7 --> 
 
-                <!-- Início Content 8 -->
+                <!-- Content 8 -->
                 <div class="content" id="content-8">
                     <img src="images/produtos/desc-5.svg" alt="desconto-5" class="desconto">
                     <span class="material-symbols-outlined fav">favorite</span>
@@ -280,7 +282,7 @@
                     </div>
 
                     <div class="adicionar">
-                        <input type="number" min="1" max="100" value="1">
+                        <input name="content" type="number" min="1" max="100" value="1">
                         <button class="comprar">Comprar</button>
                     </div>
                 </div>
@@ -313,9 +315,37 @@
 
         </section>
         <!-- Fim Sobre -->
-
-
     </main>
+
+    <!-- ChatBot -->
+    <section id="chatbot">
+
+        <button class="chatbot-toggler">
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <div class="chatbot">
+            <div class="topo">
+                <h2>Chatbot</h2>
+                <span class="close-btn material-symbols-outlined">close</span>
+            </div>
+
+            <ul class="chatbox">
+                <li class="chat incoming">
+                  <span class="material-symbols-outlined">smart_toy</span>
+                  <p>Olá! 👋<br>Como posso ajudar?</p>
+                </li>
+            </ul>
+
+            <div class="chat-input">
+                <textarea name="chat" placeholder="Envie uma mensagem..." spellcheck="false" required></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
+            </div>
+
+        </div>
+    </section>
+    <!-- Fim ChatBot -->
 
 
 </body>
